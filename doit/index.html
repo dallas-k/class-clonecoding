@@ -11,5 +11,14 @@
 </head>
 <body>
     
+    <script>
+        if ('serviceWorker' in navigator){
+            navigator.serviceWorker
+            .register('./sw.js')
+            .then((pSW)=>{console.log('서비스 워커 등록', pSW)})
+            .catch((pErr)=>{console.log('서비스 워커 실패',pErr)})
+        }
+    </script>
+
 </body>
 </html>
