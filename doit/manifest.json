@@ -1,0 +1,18 @@
+{
+    "name" : "안녕하세요! Pwa by JS",
+    "short_name" : "PWA by JS",
+    "description" : "PWA start program",
+    "scope" : ".",
+    "start_url" : "./",
+    "display" : "fullscreen",
+    "orientation" : "portrait",
+    "background_color" : "#ffffff",
+    "theme_color" : "#ffffff",
+    "icons" : [
+        {
+            "src" : "images/icons/android-chrome-192x192.png",
+            "type" : "images/png",
+            "sizes" : "192x192"
+        }        
+    ]
+}
