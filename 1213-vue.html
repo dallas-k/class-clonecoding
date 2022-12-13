@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <style>
+        #abc {
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <a v-if="flag">Vue.js</a>
+        <ul>
+            <li v-for="system in systems">{{ system }}</li>
+        </ul>
+        <p v-show="flag">p Vue</p>
+        <h5 v-bind:id="uid">Start Vue</h5>
+        <button v-on:click="popup">Alert</button>
+    </div>
+    <script>
+        new Vue({
+            el: '#app',
+            data : {
+                flag: true,
+                systems : ['ando', 'ios','wind', 'excel'],
+                uid : 'abc'
+            },
+            methods: {
+                popup: () => {
+                    return alert('경고');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
