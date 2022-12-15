@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
+    <style>
+        .blue_style {color:blue;}
+        .red_style {color:red;}
+    </style>
+    <title>v-bind</title>
+</head>
+<body>
+    <div id="app">
+        <h1>좋아하는 과일은?</h1>
+        <ul v-for="(item, index) in fruits">
+            <li>번호 : {{index}}</li>
+            <p>이름 : {{item.name}}</p>
+            <p>나이 : {{item.color}}</p>
+        </ul>
+    </div>
+    <script>
+        new Vue({
+            el : '#app',
+            data: {
+                fruits : [
+                    {name : '홍길동', color : '22'},
+                    {name : '이순신', color : '30'},
+                    {name : '김유신', color : '40'}
+                ]
+            }
+        })
+    </script>
+</body>
+</html>
