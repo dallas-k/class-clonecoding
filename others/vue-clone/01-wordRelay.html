@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <h1>끝말잇기</h1>
+        <div>
+            <p>{{fWord}}</p>
+        </div>
+        <form @submit="submitform">
+            <input type="text" v-model="val">
+            <button type="submit">입력</button>
+        </form>
+        <div>
+            <p>{{result}}</p>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el:'#root',
+            data() {
+                return {
+                    fWord : '내일',
+                    val : '',
+                    result : ''
+                }
+            },
+            methods : {
+                submitform(e){
+                    e.preventDefault();
+                    if(this.fWord[this.fWord.length - 1] === this.val[0]){
+                        this.result = '정답';
+                        this.fWord = this.val;
+                        this.val = '';
+                    } else {
+                        this.result = '틀림';
+                        this.val = '';
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>

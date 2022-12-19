@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://unpkg.com/vue-router@3.0.1/dist/vue-router.js"></script>
+    <style>
+    </style>
+    <title>v-router</title>
+</head>
+<body>
+    <div id="app">
+        <h1>안녕하세요</h1>
+        <p>
+            <router-link to="/main">메인 페이지 이동</router-link>
+            <router-link to="/sub">서브 페이지 이동</router-link>
+        </p>
+        <hr>
+        <router-view></router-view>
+    </div>
+
+
+<script>
+    const tmMain = {
+        template : '<h2>메인 페이지</h2>'
+    }
+    const tmSub = {
+        template : '<h2>서브 페이지</h2>'
+    }
+    const rtRoutes = [{
+        path: '/main',
+        component : tmMain
+    },
+    {
+        path: '/sub',
+        component : tmSub
+    }]
+
+    const router = new VueRouter({
+        routes : rtRoutes
+    })
+
+    let app = new Vue({
+        el: '#app',
+        router
+    })
+</script>
+</body>
+</html>
