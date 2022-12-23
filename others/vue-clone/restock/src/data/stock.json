@@ -1,0 +1,18 @@
+[
+    {
+        "date" : "2022/12/02",
+        "name" : "삼성전자",
+        "price" : 62000,
+        "count" : 5,
+        "category" : "국내주식",
+        "currency" : "원"
+    },
+    {
+        "date" : "2022/12/02",
+        "name" : "TQQQ",
+        "price" : 32.24,
+        "count" : 5,
+        "category" : "해외주식",
+        "currency" : "달러"
+    }
+]

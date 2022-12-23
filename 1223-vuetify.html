@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <style>
+        .border_style {
+            border:1px solid tomato;
+            background-color:rgb(153, 204, 14);
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <v-app>
+            <v-app-bar app color="blue" dark>
+                <v-app-bar-nav-icon></v-app-bar-nav-icon>
+                <v-toolbar-title>VueJS List</v-toolbar-title>
+            </v-app-bar>
+            <v-main>
+                <v-container>
+                    <v-card>
+                        <v-card-text style="height:300px;" class="grey lighten-4"></v-card-text>
+                        <v-card-text style="height:50px; position:relative;">
+                            <v-btn absolute dark fab top right color="pink">
+                                <v-icon>add</v-icon>
+                            </v-btn>
+                        </v-card-text>
+                    </v-card>
+                </v-container>
+            </v-main>
+        </v-app>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            vuetify: new Vuetify()
+        })
+    </script>
+</body>
+</html>
