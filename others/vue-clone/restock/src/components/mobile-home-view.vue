@@ -34,8 +34,8 @@ export default {
 <style scoped>
 #homeview {
     width : 100%;
-    position:relative;
-    top:30%;
+    position:absolute;
+    top:20%;
   }
   #homeview button {
     display:block;

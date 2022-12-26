@@ -17,3 +17,5 @@ tablet first -> mobile -> pc
 
 <Error & Update>
 - Modal Background 눌렀을 때 display none;
+- loading 시 바로 화면이 안나오는 경우가 있음 (size 문제로 추정)
+- mobile 화면에서 메뉴 누르고 홈으로 돌아올 시 목록 안사라짐

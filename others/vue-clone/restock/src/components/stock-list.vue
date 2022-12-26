@@ -52,11 +52,11 @@ export default {
     display:block;
 }
 .list1 {width:15%; font-size:var(--font-small);}
-.list2 {width:25%}
-.list3 {width:15%}
-.list4 {width:15%}
-.list5 {width:20%}
-.list6 {width:10%}
+.list2 {width:25%; font-size:var(--font-medium);}
+.list3 {width:15%; font-size:var(--font-medium);}
+.list4 {width:15%; font-size:var(--font-medium);}
+.list5 {width:20%; font-size:var(--font-medium);}
+.list6 {width:10%; font-size:var(--font-medium);}
 .list6 button {font-size:var(--font-small)}
 
 @media screen and (max-width:573px) {

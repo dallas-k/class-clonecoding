@@ -1,6 +1,0 @@
-<!-- mobile version -->
-      <div id="nav_mobile" v-if="mobile">
-        <button><router-link class="nav-link" to="/portfolio"><i id='nav_icon' class="fa fa-arrow-left" aria-hidden="true"></i></router-link></button>
-        <button><router-link class="nav-link" to="/"><i id='nav_icon' class="fa fa-home" aria-hidden="true"></i></router-link></button>
-        <button><router-link class="nav-link" to="/stock"><i id='nav_icon' class="fa fa-arrow-right" aria-hidden="true"></i></router-link></button>
-      </div>
