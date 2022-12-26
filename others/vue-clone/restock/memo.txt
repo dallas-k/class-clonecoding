@@ -1,0 +1,12 @@
+<첫 화면 App>
+
+1. mobile size
+- MHomeView load
+
+
+2. tablet size
+- 바로 stockview 부터 load
+
+
+3. desktop size
+- MHomeView + stockview + 화면 분할

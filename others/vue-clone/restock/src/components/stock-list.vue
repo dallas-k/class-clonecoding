@@ -57,4 +57,14 @@ export default {
 .list4 {width:15%}
 .list5 {width:20%}
 .list6 {width:10%}
+.list6 button {font-size:var(--font-small)}
+
+@media screen and (max-width:573px) {
+    .list1 {font-size:var(--font-xsmall)}
+    .list2 {font-size:var(--font-small)}
+    .list3 {font-size:var(--font-small)}
+    .list4 {font-size:var(--font-small)}
+    .list5 {font-size:var(--font-small)}
+    .list6 button{font-size:var(--font-xsmall)}
+  }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <mainTitle />
+    <commonTitle :sTitle="title" />
     <stockHeader />
     <stockList />
   </div>
@@ -8,14 +8,19 @@
 
 <script>
 // @ is an alias to /src
-import mainTitle from '@/components/main-title.vue'
+import commonTitle from '@/components/common-title.vue'
 import stockHeader from '@/components/stock-header.vue'
 import stockList from '@/components/stock-list.vue'
 
 export default {
   name: 'StockView',
+  data() {
+    return {
+      title : '보유 주식 관리'
+    }
+  },
   components: {
-    mainTitle,
+    commonTitle,
     stockHeader,
     stockList
   }
