@@ -10,7 +10,7 @@
     --font-xsmall : 10px;
   }
 
-html, body, h1, p, div, section, span {margin:0; padding:0;}
+html, body, h1, h2, p, div, section, span {margin:0; padding:0;}
 * {box-sizing: border-box;}
 button {border: none;}
 ul {list-style: none;}

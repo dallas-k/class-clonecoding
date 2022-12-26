@@ -1,3 +1,6 @@
+<작업순서>
+tablet first -> mobile -> pc
+
 <첫 화면 App>
 
 1. mobile size
@@ -10,3 +13,7 @@
 
 3. desktop size
 - MHomeView + stockview + 화면 분할
+
+
+<Error & Update>
+- Modal Background 눌렀을 때 display none;
